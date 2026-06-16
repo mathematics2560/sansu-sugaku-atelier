@@ -48,7 +48,7 @@ const GROUPS: Group[] = [
     badgeText: "text-orange-700",
     categories: [
       { label: "高校数学Ⅰ", href: "/prints/math1" },
-      { label: "高校数学A", href: null },
+      { label: "高校数学A", href: "/prints/mathA" },
       { label: "高校数学Ⅱ", href: null },
       { label: "高校数学B", href: null },
       { label: "高校数学Ⅲ", href: null },
@@ -115,6 +115,24 @@ export default function PrintsPage() {
             </nav>
             <h1 className="text-2xl sm:text-3xl font-black text-gray-900 mb-1">プリント一覧</h1>
             <p className="text-gray-500 text-sm">科目を選んでプリントをダウンロードできます</p>
+          </div>
+        </div>
+
+        {/* Terms notice */}
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 pt-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4">
+            <p className="text-sm text-amber-800">
+              プリントをご利用の前に、利用規約をご確認ください。
+            </p>
+            <Link
+              href="/terms-of-use"
+              className="shrink-0 inline-flex items-center gap-1.5 bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors"
+            >
+              利用規約を見る
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
 

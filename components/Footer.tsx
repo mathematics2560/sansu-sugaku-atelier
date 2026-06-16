@@ -10,6 +10,7 @@ const FOOTER_LINKS = [
   { href: "/news", label: "お知らせ" },
   { href: "/contact", label: "お問い合わせ" },
   { href: "/privacy", label: "プライバシーポリシー" },
+  { href: "/terms-of-use", label: "プリント利用規約" },
 ];
 
 export default function Footer() {

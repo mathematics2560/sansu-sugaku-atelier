@@ -54,11 +54,6 @@ export default function NewsPage() {
             ))}
           </div>
 
-          <p className="mt-8 text-center text-xs text-gray-400">
-            お知らせデータは
-            <code className="mx-1 bg-gray-100 px-1.5 py-0.5 rounded text-gray-500">data/news.json</code>
-            で管理しています
-          </p>
         </div>
       </main>
 
