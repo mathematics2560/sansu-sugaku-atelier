@@ -10,6 +10,7 @@ const PATHS = [
   "/prints",
   "/prints/math1",
   "/prints/mathA",
+  "/prints/math2",
   "/how-to-learn",
   "/faq",
   "/news",

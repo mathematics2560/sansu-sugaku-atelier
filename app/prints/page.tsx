@@ -49,7 +49,7 @@ const GROUPS: Group[] = [
     categories: [
       { label: "高校数学Ⅰ", href: "/prints/math1" },
       { label: "高校数学A", href: "/prints/mathA" },
-      { label: "高校数学Ⅱ", href: null },
+      { label: "高校数学Ⅱ", href: "/prints/math2" },
       { label: "高校数学B", href: null },
       { label: "高校数学Ⅲ", href: null },
       { label: "高校数学C", href: null },

@@ -14,7 +14,7 @@ type Subject = {
 const SUBJECTS: Subject[] = [
   { label: "数学Ⅰ", href: "/prints/math1" },
   { label: "数学A", href: "/prints/mathA" },
-  { label: "数学Ⅱ", href: null },
+  { label: "数学Ⅱ", href: "/prints/math2" },
   { label: "数学B", href: null },
   { label: "数学Ⅲ", href: null },
   { label: "数学C", href: null },
