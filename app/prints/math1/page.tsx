@@ -323,9 +323,13 @@ function PrintCard({ p }: { p: Print }) {
   );
 }
 
+function chapterAnchorId(chapter: Chapter): string {
+  return `chapter-${chapter.num.replace(/[^0-9]/g, "")}`;
+}
+
 function ChapterSection({ chapter }: { chapter: Chapter }) {
   return (
-    <section>
+    <section id={chapterAnchorId(chapter)} className="scroll-mt-24">
       <div className="flex items-center gap-3 mb-5">
         <div className="flex items-center gap-2">
           <span className="bg-orange-100 text-orange-700 text-xs font-black px-2.5 py-1 rounded-full">
@@ -390,6 +394,24 @@ export default function Math1Page() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
+          </div>
+        </div>
+
+        {/* Unit navigation */}
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 pt-6">
+          <div className="flex flex-wrap gap-2.5">
+            {CHAPTERS.map((chapter) => (
+              <a
+                key={chapter.num}
+                href={`#${chapterAnchorId(chapter)}`}
+                className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-2.5 hover:border-orange-300 hover:shadow-sm transition-all duration-150"
+              >
+                <span className="text-xs font-black bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full">
+                  {chapter.num}
+                </span>
+                <span className="text-sm font-medium text-gray-700">{chapter.title}</span>
+              </a>
+            ))}
           </div>
         </div>
 
