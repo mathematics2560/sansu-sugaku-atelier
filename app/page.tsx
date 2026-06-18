@@ -64,18 +64,18 @@ const GRADES = [
 ];
 
 const POPULAR_UNITS = [
-  { label: "二次方程式の解き方", grade: "中3", gc: "bg-blue-100 text-blue-700" },
-  { label: "分数のたし算・ひき算", grade: "小4", gc: "bg-green-100 text-green-700" },
-  { label: "二次関数とグラフ", grade: "高1", gc: "bg-orange-100 text-orange-700" },
-  { label: "行列の基本", grade: "大学", gc: "bg-purple-100 text-purple-700" },
-  { label: "三角比の定義", grade: "高1", gc: "bg-orange-100 text-orange-700" },
-  { label: "連立方程式", grade: "中2", gc: "bg-blue-100 text-blue-700" },
-  { label: "面積と体積", grade: "小6", gc: "bg-green-100 text-green-700" },
-  { label: "数列・等差数列", grade: "高2", gc: "bg-orange-100 text-orange-700" },
-  { label: "微分の基礎", grade: "高3", gc: "bg-orange-100 text-orange-700" },
-  { label: "確率の基本", grade: "中2", gc: "bg-blue-100 text-blue-700" },
-  { label: "展開と因数分解", grade: "中3", gc: "bg-blue-100 text-blue-700" },
-  { label: "ベクトルの基本", grade: "高2", gc: "bg-orange-100 text-orange-700" },
+  { label: "数と式", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-1" },
+  { label: "集合と命題", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-2" },
+  { label: "2次関数", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-3" },
+  { label: "図形と計量", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-4" },
+  { label: "データの分析", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-5" },
+  { label: "場合の数", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-1" },
+  { label: "確率", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-2" },
+  { label: "図形の性質", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-3" },
+  { label: "数学と人間の活動", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-4" },
+  { label: "式と証明", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-1" },
+  { label: "複素数と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-2" },
+  { label: "図形と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-3" },
 ];
 
 const FEATURES = [
@@ -244,7 +244,7 @@ export default function Home() {
                 <p className="text-gray-500 text-sm">よく学ばれている単元をピックアップしました</p>
               </div>
               <Link
-                href="/unit"
+                href="/topics"
                 className="shrink-0 flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
               >
                 <span>すべて見る</span>
@@ -257,7 +257,7 @@ export default function Home() {
               {POPULAR_UNITS.map((u) => (
                 <Link
                   key={u.label}
-                  href="#"
+                  href={u.href}
                   className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-2.5 hover:border-blue-300 hover:shadow-sm transition-all duration-150 group"
                 >
                   <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${u.gc}`}>{u.grade}</span>
