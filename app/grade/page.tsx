@@ -8,7 +8,7 @@ export const metadata = {
 
 const GRADES = [
   { icon: "✏️", label: "小学生の算数", sub: "1〜6年生", bg: "bg-green-50", border: "border-green-200", iconBg: "bg-green-100", text: "text-green-700", href: null },
-  { icon: "📐", label: "中学生の数学", sub: "中1〜中3", bg: "bg-blue-50", border: "border-blue-200", iconBg: "bg-blue-100", text: "text-blue-700", href: null },
+  { icon: "📐", label: "中学生の数学", sub: "中1〜中3", bg: "bg-blue-50", border: "border-blue-200", iconBg: "bg-blue-100", text: "text-blue-700", href: "/grade/middle" },
   { icon: "📈", label: "高校数学", sub: "数学Ⅰ・A・Ⅱ・B・Ⅲ・C", bg: "bg-orange-50", border: "border-orange-200", iconBg: "bg-orange-100", text: "text-orange-700", href: "/grade/high-school" },
   { icon: "🎓", label: "大学数学", sub: "線形代数・解析学ほか", bg: "bg-purple-50", border: "border-purple-200", iconBg: "bg-purple-100", text: "text-purple-700", href: null },
 ];

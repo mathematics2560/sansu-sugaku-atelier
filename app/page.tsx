@@ -26,7 +26,7 @@ const GRADES = [
     href: "/grade/elementary",
   },
   {
-    active: false,
+    active: true,
     icon: "📐",
     label: "中学生の数学",
     sub: "中1〜中3",

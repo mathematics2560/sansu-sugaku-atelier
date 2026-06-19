@@ -36,7 +36,7 @@ const GROUPS: Group[] = [
     badgeBg: "bg-blue-100",
     badgeText: "text-blue-700",
     categories: [
-      { label: "中学1年生", href: null },
+      { label: "中学1年生", href: "/prints/chu1" },
       { label: "中学2年生", href: null },
       { label: "中学3年生", href: null },
     ],
