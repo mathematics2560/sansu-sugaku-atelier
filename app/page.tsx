@@ -64,6 +64,7 @@ const GRADES = [
 ];
 
 const POPULAR_UNITS = [
+  { label: "正の数・負の数", grade: "中1", gc: "bg-blue-100 text-blue-700", href: "/prints/chu1#chapter-1" },
   { label: "数と式", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-1" },
   { label: "集合と命題", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-2" },
   { label: "2次関数", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-3" },
@@ -105,8 +106,8 @@ const FEATURES = [
 
 const HERO_STATS = [
   { icon: "🎥", num: "0本", label: "動画コンテンツ", solid: true },
-  { icon: "📄", num: "80枚", label: "無料プリント", solid: false },
-  { icon: "📚", num: "高校数学Ⅰ・A・Ⅱ", label: "対応コンテンツ", solid: false },
+  { icon: "📄", num: "87枚", label: "無料プリント", solid: false },
+  { icon: "📚", num: "中1・高校Ⅰ・A・Ⅱ", label: "対応コンテンツ", solid: false },
   { icon: "✅", num: "完全無料", label: "登録不要", solid: true, green: true },
 ];
 
