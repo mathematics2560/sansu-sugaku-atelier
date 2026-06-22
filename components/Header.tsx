@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "/", label: "ホーム" },
@@ -23,13 +24,15 @@ export default function Header() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 gap-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
-            <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm group-hover:bg-blue-700 transition-colors">
-              <span className="text-white font-black text-base select-none">数</span>
-            </div>
-            <span className="font-black text-gray-900 text-sm sm:text-base whitespace-nowrap">
-              算数・数学の<span className="text-blue-600">アトリエ</span>
-            </span>
+          <Link href="/" className="flex items-center shrink-0 group">
+            <Image
+              src="/images/logo.png"
+              alt="算数・数学のアトリエ"
+              width={1254}
+              height={1254}
+              priority
+              className="h-10 w-10 sm:h-11 sm:w-11 object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}

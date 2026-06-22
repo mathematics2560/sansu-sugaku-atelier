@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const FOOTER_LINKS = [
   { href: "/", label: "ホーム" },
@@ -20,11 +21,16 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 justify-between">
           {/* Brand */}
           <div className="shrink-0">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center">
-                <span className="text-white font-black text-base select-none">数</span>
+            <div className="flex items-center mb-4">
+              <div className="bg-white rounded-xl p-1">
+                <Image
+                  src="/images/logo.png"
+                  alt="算数・数学のアトリエ"
+                  width={1254}
+                  height={1254}
+                  className="h-9 w-9 object-contain"
+                />
               </div>
-              <span className="font-black text-white text-base">算数・数学のアトリエ</span>
             </div>
             <p className="text-sm leading-relaxed text-gray-500 max-w-xs">
               小学生の算数から大学数学まで、<br />

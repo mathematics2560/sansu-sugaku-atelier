@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -41,8 +42,14 @@ export default function AboutPage() {
           <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8 sm:p-10">
             {/* Profile header */}
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0 shadow-sm">
-                <span className="text-white font-black text-2xl select-none">数</span>
+              <div className="w-16 h-16 rounded-2xl bg-white border border-gray-200 flex items-center justify-center shrink-0 shadow-sm p-1.5">
+                <Image
+                  src="/images/logo.png"
+                  alt="算数・数学のアトリエ"
+                  width={1254}
+                  height={1254}
+                  className="object-contain"
+                />
               </div>
               <div>
                 <h2 className="font-black text-gray-900 text-lg leading-tight">佐藤 大智</h2>
