@@ -77,6 +77,7 @@ const POPULAR_UNITS = [
   { label: "式と証明", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-1" },
   { label: "複素数と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-2" },
   { label: "図形と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-3" },
+  { label: "三角関数", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-4" },
 ];
 
 const FEATURES = [
@@ -106,7 +107,7 @@ const FEATURES = [
 
 const HERO_STATS = [
   { icon: "🎥", num: "0本", label: "動画コンテンツ", solid: true },
-  { icon: "📄", num: "87枚", label: "無料プリント", solid: false },
+  { icon: "📄", num: "96枚", label: "無料プリント", solid: false },
   { icon: "📚", num: "中1・高校Ⅰ・A・Ⅱ", label: "対応コンテンツ", solid: false },
   { icon: "✅", num: "完全無料", label: "登録不要", solid: true, green: true },
 ];
