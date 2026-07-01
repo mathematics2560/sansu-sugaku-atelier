@@ -1,14 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-type Print = {
-  id: string;
-  supplement?: boolean;
-  title: string;
-  desc: string;
-  filename: string;
-};
+import { Print, PrintCard } from "@/components/PrintCard";
 
 type Chapter = {
   num: string;
@@ -183,48 +176,6 @@ const CHAPTERS: Chapter[] = [
 
 const TOTAL_PRINTS = CHAPTERS.reduce((sum, ch) => sum + ch.prints.length, 0);
 
-function PrintCard({ p }: { p: Print }) {
-  const downloadHref = `/prints/mathA/${p.filename}`;
-
-  return (
-    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col">
-      <div className="flex items-center gap-2 mb-4">
-        <span
-          className={`text-xs font-black px-3 py-1 rounded-full ${
-            p.supplement ? "bg-amber-100 text-amber-700" : "bg-blue-600 text-white"
-          }`}
-        >
-          #{p.id}
-        </span>
-        {p.supplement && (
-          <span className="text-xs font-bold bg-amber-50 text-amber-600 border border-amber-200 px-2.5 py-0.5 rounded-full">
-            補足
-          </span>
-        )}
-      </div>
-
-      <h3 className="font-black text-gray-900 text-base leading-snug mb-3">{p.title}</h3>
-      <p className="text-sm text-gray-500 leading-relaxed flex-1 mb-5">{p.desc}</p>
-
-      <a
-        href={downloadHref}
-        download={p.filename}
-        className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition-colors"
-      >
-        <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-          />
-        </svg>
-        <span>プリントをダウンロード</span>
-      </a>
-    </div>
-  );
-}
-
 function chapterAnchorId(chapter: Chapter): string {
   return `chapter-${chapter.num.replace(/[^0-9]/g, "")}`;
 }
@@ -243,7 +194,7 @@ function ChapterSection({ chapter }: { chapter: Chapter }) {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {chapter.prints.map((p, i) => (
-          <PrintCard key={i} p={p} />
+          <PrintCard key={i} p={p} downloadBase="/prints/mathA" />
         ))}
       </div>
     </section>
