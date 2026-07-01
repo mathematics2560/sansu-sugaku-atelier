@@ -138,18 +138,18 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link
-                    href="/videos"
+                    href="/grade"
                     className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3.5 rounded-xl transition-colors shadow-sm"
                   >
-                    <span>🎥</span>
-                    <span>動画から探す</span>
+                    <span>📚</span>
+                    <span>学年から探す</span>
                   </Link>
                   <Link
                     href="/prints"
                     className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-800 font-bold px-6 py-3.5 rounded-xl border border-gray-200 transition-colors shadow-sm"
                   >
                     <span>📄</span>
-                    <span>コンテンツから探す</span>
+                    <span>プリント一覧を見る</span>
                   </Link>
                 </div>
               </div>
