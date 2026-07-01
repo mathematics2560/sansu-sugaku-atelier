@@ -215,7 +215,7 @@ export default function MathAPage() {
               <svg className="w-3.5 h-3.5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-              <Link href="/prints" className="hover:text-blue-600 transition-colors">プリント一覧</Link>
+              <Link href="/prints" className="hover:text-blue-600 transition-colors">コンテンツ一覧</Link>
               <svg className="w-3.5 h-3.5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

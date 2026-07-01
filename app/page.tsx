@@ -149,7 +149,7 @@ export default function Home() {
                     className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-800 font-bold px-6 py-3.5 rounded-xl border border-gray-200 transition-colors shadow-sm"
                   >
                     <span>📄</span>
-                    <span>プリントから探す</span>
+                    <span>コンテンツから探す</span>
                   </Link>
                 </div>
               </div>

@@ -124,7 +124,7 @@ export default function TermsOfUsePage() {
                 <svg className="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-                プリント一覧に戻る
+                コンテンツ一覧に戻る
               </Link>
             </div>
           </div>
