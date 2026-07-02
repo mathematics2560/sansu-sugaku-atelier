@@ -78,6 +78,7 @@ const POPULAR_UNITS = [
   { label: "複素数と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-2" },
   { label: "図形と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-3" },
   { label: "三角関数", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-4" },
+  { label: "指数関数と対数関数", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-5" },
 ];
 
 const FEATURES = [
