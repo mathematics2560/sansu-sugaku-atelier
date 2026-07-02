@@ -110,12 +110,14 @@ const CHAPTERS: Chapter[] = [
         title: "集合の表し方・要素と集合",
         desc: "集合・要素の定義と∈・∉の記号、要素の列挙法と条件記法による集合の表し方を学ぶ基礎プリントです。",
         filename: "2_集合と命題_No.1.pdf",
+        videoUrl:"https://youtu.be/hO6qmcXjP74",
       },
       {
         id: "02",
         title: "部分集合・共通部分・和集合・補集合・ド・モルガンの法則",
         desc: "部分集合・空集合の概念から、共通部分(∩)・和集合(∪)・補集合の計算、ド・モルガンの法則までを整理したプリントです。",
         filename: "2_集合と命題_No.2.pdf",
+        videoUrl:"https://youtu.be/QQm1okSbSts",
       },
       {
         id: "03",

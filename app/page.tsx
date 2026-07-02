@@ -106,7 +106,7 @@ const FEATURES = [
 
 
 const HERO_STATS = [
-  { icon: "🎥", num: "19本", label: "動画コンテンツ", solid: true },
+  { icon: "🎥", num: "21本", label: "動画コンテンツ", solid: true },
   { icon: "📄", num: "101枚", label: "無料プリント", solid: false },
   { icon: "📚", num: "中1・高校Ⅰ・A・Ⅱ", label: "対応コンテンツ", solid: false },
   { icon: "✅", num: "完全無料", label: "登録不要", solid: true, green: true },
