@@ -102,7 +102,10 @@ const CHAPTERS: Chapter[] = [
         videoUrl:"https://youtu.be/9L1dYRpFM1w",
       },
     ],
-    summary: {},
+    summary: {
+      filename: "1_数と式.pdf",
+      videoUrl: "https://youtu.be/hz1d502iK10",
+    },
   },
   {
     num: "第2章",
@@ -148,7 +151,9 @@ const CHAPTERS: Chapter[] = [
         filename: "2_集合と命題_No.5.pdf",
       },
     ],
-    summary: {},
+    summary: {
+      filename: "2_集合と命題.pdf",
+    },
   },
   {
     num: "第3章",
@@ -203,7 +208,9 @@ const CHAPTERS: Chapter[] = [
         filename: "3_2次関数_No.8.pdf",
       },
     ],
-    summary: {},
+    summary: {
+      filename: "3_2次関数.pdf",
+    },
   },
   {
     num: "第4章",
@@ -240,7 +247,9 @@ const CHAPTERS: Chapter[] = [
         filename: "4_図形と計量_No.5.pdf",
       },
     ],
-    summary: {},
+    summary: {
+      filename: "4_図形と計量.pdf",
+    },
   },
   {
     num: "第5章",
@@ -289,7 +298,9 @@ const CHAPTERS: Chapter[] = [
         filename: "5_データの分析_No.7.pdf",
       },
     ],
-    summary: {},
+    summary: {
+      filename: "5_データの分析.pdf",
+    },
   },
 ];
 

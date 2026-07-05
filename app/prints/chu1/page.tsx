@@ -2,11 +2,13 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Print, PrintCard } from "@/components/PrintCard";
+import { ChapterSummary, ChapterSummaryCard } from "@/components/ChapterSummaryCard";
 
 type Chapter = {
   num: string;
   title: string;
   prints: Print[];
+  summary?: ChapterSummary;
 };
 
 const CHAPTERS: Chapter[] = [
@@ -64,6 +66,10 @@ const CHAPTERS: Chapter[] = [
         videoUrl:"https://youtu.be/Gft51Mt436U",
       },
     ],
+    summary: {
+      filename: "1_正の数・負の数.pdf",
+      videoUrl: "https://youtu.be/vykZ4c7ekPQ",
+    },
   },
   {
     num: "第2章",
@@ -116,11 +122,22 @@ function ChapterSection({ chapter }: { chapter: Chapter }) {
         <div className="h-px flex-1 border-t border-gray-200" />
       </div>
       {chapter.prints.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-          {chapter.prints.map((p, i) => (
-            <PrintCard key={i} p={p} downloadBase="/prints/chu1" />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {chapter.prints.map((p, i) => (
+              <PrintCard key={i} p={p} downloadBase="/prints/chu1" />
+            ))}
+          </div>
+          {chapter.summary && (
+            <div className="mt-4 sm:mt-5">
+              <ChapterSummaryCard
+                chapterTitle={chapter.title}
+                summary={chapter.summary}
+                downloadBase="/prints/chu1"
+              />
+            </div>
+          )}
+        </>
       ) : (
         <div className="flex items-center justify-center bg-gray-50 border border-gray-200 rounded-2xl py-10">
           <span className="text-sm font-bold bg-white text-gray-400 border border-gray-200 px-4 py-1.5 rounded-full">

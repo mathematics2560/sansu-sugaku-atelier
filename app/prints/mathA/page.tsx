@@ -2,11 +2,13 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Print, PrintCard } from "@/components/PrintCard";
+import { ChapterSummary, ChapterSummaryCard } from "@/components/ChapterSummaryCard";
 
 type Chapter = {
   num: string;
   title: string;
   prints: Print[];
+  summary?: ChapterSummary;
 };
 
 const CHAPTERS: Chapter[] = [
@@ -57,6 +59,9 @@ const CHAPTERS: Chapter[] = [
         filename: "1_場合の数_No.7.pdf",
       },
     ],
+    summary: {
+      filename: "1_場合の数.pdf",
+    },
   },
   {
     num: "第2章",
@@ -93,6 +98,9 @@ const CHAPTERS: Chapter[] = [
         filename: "2_確率_No.5.pdf",
       },
     ],
+    summary: {
+      filename: "2_確率.pdf",
+    },
   },
   {
     num: "第3章",
@@ -129,6 +137,9 @@ const CHAPTERS: Chapter[] = [
         filename: "3_図形の性質_No.5.pdf",
       },
     ],
+    summary: {
+      filename: "3_図形の性質.pdf",
+    },
   },
   {
     num: "第4章",
@@ -171,6 +182,9 @@ const CHAPTERS: Chapter[] = [
         filename: "4_数学と人間の活動_No.6.pdf",
       },
     ],
+    summary: {
+      filename: "4_数学と人間の活動.pdf",
+    },
   },
 ];
 
@@ -197,6 +211,15 @@ function ChapterSection({ chapter }: { chapter: Chapter }) {
           <PrintCard key={i} p={p} downloadBase="/prints/mathA" />
         ))}
       </div>
+      {chapter.summary && (
+        <div className="mt-4 sm:mt-5">
+          <ChapterSummaryCard
+            chapterTitle={chapter.title}
+            summary={chapter.summary}
+            downloadBase="/prints/mathA"
+          />
+        </div>
+      )}
     </section>
   );
 }

@@ -2,11 +2,13 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Print, PrintCard } from "@/components/PrintCard";
+import { ChapterSummary, ChapterSummaryCard } from "@/components/ChapterSummaryCard";
 
 type Chapter = {
   num: string;
   title: string;
   prints: Print[];
+  summary?: ChapterSummary;
 };
 
 const CHAPTERS: Chapter[] = [
@@ -45,6 +47,9 @@ const CHAPTERS: Chapter[] = [
         filename: "1_式と証明_No.5.pdf",
       },
     ],
+    summary: {
+      filename: "1_式と証明.pdf",
+    },
   },
   {
     num: "第2章",
@@ -81,6 +86,9 @@ const CHAPTERS: Chapter[] = [
         filename: "2_複素数と方程式_No.5.pdf",
       },
     ],
+    summary: {
+      filename: "2_複素数と方程式.pdf",
+    },
   },
   {
     num: "第3章",
@@ -141,6 +149,9 @@ const CHAPTERS: Chapter[] = [
         filename: "3_図形と方程式_No.9.pdf",
       },
     ],
+    summary: {
+      filename: "3_図形と方程式.pdf",
+    },
   },
   {
     num: "第4章",
@@ -202,6 +213,9 @@ const CHAPTERS: Chapter[] = [
         filename: "4_三角関数_No.8.pdf",
       },
     ],
+    summary: {
+      filename: "4_三角関数.pdf",
+    },
   },
   {
     num: "第5章",
@@ -238,6 +252,9 @@ const CHAPTERS: Chapter[] = [
         filename: "5_指数関数と対数関数_No.5.pdf",
       },
     ],
+    summary: {
+      filename: "5_指数関数と対数関数.pdf",
+    },
   },
   {
     num: "第6章",
@@ -265,11 +282,22 @@ function ChapterSection({ chapter }: { chapter: Chapter }) {
         <div className="h-px flex-1 border-t border-gray-200" />
       </div>
       {chapter.prints.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-          {chapter.prints.map((p, i) => (
-            <PrintCard key={i} p={p} downloadBase="/prints/math2" />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {chapter.prints.map((p, i) => (
+              <PrintCard key={i} p={p} downloadBase="/prints/math2" />
+            ))}
+          </div>
+          {chapter.summary && (
+            <div className="mt-4 sm:mt-5">
+              <ChapterSummaryCard
+                chapterTitle={chapter.title}
+                summary={chapter.summary}
+                downloadBase="/prints/math2"
+              />
+            </div>
+          )}
+        </>
       ) : (
         <div className="flex items-center justify-center bg-gray-50 border border-gray-200 rounded-2xl py-10">
           <span className="text-sm font-bold bg-white text-gray-400 border border-gray-200 px-4 py-1.5 rounded-full">
