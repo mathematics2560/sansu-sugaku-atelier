@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 const BIO_PARAGRAPHS = [
-  "こんにちは！算数・数学のアトリエで講師を務める佐藤大智です！",
+  "こんにちは！算数・数学のアトリエで講師を務めています！",
   "……といっても、企画も運営も僕一人でやっています（笑）。このホームページも自分で作りました（笑）。",
   "数学って、ちゃんと向き合えばすごくおもしろいのに、「わからない」が積み重なって嫌いになってしまう人が多いと思うんです。塾で授業をしていたときも、ずっとそれがもったいないなと感じていました。",
   "「だったら、誰でもアクセスできる場所に、わかりやすい教材を置こう」——そんな思いから、このサイトとYouTubeを始めました。",
@@ -52,10 +52,7 @@ export default function AboutPage() {
                 />
               </div>
               <div>
-                <h2 className="font-black text-gray-900 text-lg leading-tight">佐藤 大智</h2>
-                <span className="inline-block mt-1 text-xs font-bold bg-orange-100 text-orange-700 px-2.5 py-1 rounded-full">
-                  算数・数学のアトリエ 講師
-                </span>
+                <h2 className="font-black text-gray-900 text-lg leading-tight">算数・数学のアトリエ講師</h2>
               </div>
             </div>
 
