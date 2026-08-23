@@ -130,6 +130,7 @@ const CHAPTERS: Chapter[] = [
         title: "命題と真偽・十分条件・必要条件",
         desc: "命題の定義と真偽の判定、p⇒qの意味、十分条件・必要条件の判定方法を学ぶプリントです。",
         filename: "2_集合と命題_No.3.pdf",
+        videoUrl:"https://youtu.be/IlskVuAMGqU"
       },
       {
         id: "03",
@@ -137,22 +138,26 @@ const CHAPTERS: Chapter[] = [
         title: "十分条件・必要条件の理解と条件の否定",
         desc: "十分条件・必要条件の意味をより深く理解し、条件の否定やド・モルガンの法則（条件版）を学ぶ補足プリントです。",
         filename: "2_集合と命題_No.3補足.pdf",
+        videoUrl:"https://youtu.be/NrDI_4tm-HM"
       },
       {
         id: "04",
         title: "命題の逆・裏・対偶",
         desc: "命題の逆・裏・対偶の定義と、真理値表を用いて命題と対偶の真偽が一致することを理解するプリントです。",
         filename: "2_集合と命題_No.4.pdf",
+        videoUrl:"https://youtu.be/hvMVA01OT34"
       },
       {
         id: "05",
         title: "背理法",
         desc: "背理法を使った証明の手順と、典型的な証明問題を収録したプリントです。",
         filename: "2_集合と命題_No.5.pdf",
+        videoUrl:"https://youtu.be/9n6zmqQeqLs"
       },
     ],
     summary: {
       filename: "2_集合と命題.pdf",
+      videoUrl:"https://youtu.be/1Jxrhb9Lt60"
     },
   },
   {
