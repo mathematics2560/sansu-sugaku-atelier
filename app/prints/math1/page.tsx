@@ -169,52 +169,61 @@ const CHAPTERS: Chapter[] = [
         title: "関数の定義・定義域と値域・1次関数",
         desc: "関数の定義やf(x)の表し方、定義域・値域、座標平面の象限、1次関数とグラフの復習を扱う導入プリントです。",
         filename: "3_2次関数_No.1.pdf",
+        videoUrl:"https://youtu.be/cnd_4Xe96Qk"
       },
       {
         id: "02",
         title: "y=ax²のグラフと平行移動",
         desc: "y=ax²の復習から始め、グラフの平行移動の方法を学び、y=a(x-p)²+qの頂点と軸の方程式を理解するプリントです。",
         filename: "3_2次関数_No.2.pdf",
+        videoUrl:"https://youtu.be/Ixvg27gp5Kk"
       },
       {
         id: "03",
         title: "平方完成",
         desc: "y=ax²+bx+cをy=a(x-p)²+qの形に変形する平方完成の手順を学び、グラフの軸と頂点を求める練習プリントです。",
         filename: "3_2次関数_No.3.pdf",
+        videoUrl:"https://youtu.be/iBCoxDi9PVk"
       },
       {
         id: "04",
         title: "対称移動と2次関数の表し方",
         desc: "x軸・y軸・原点に関する対称移動の方法と、2次関数の3つの表し方（標準形・一般形・因数分解形）を学ぶプリントです。",
         filename: "3_2次関数_No.4.pdf",
+        videoUrl:"https://youtu.be/0xOALtorQu8"
       },
       {
         id: "05",
         title: "2次関数の最大値・最小値（軸が動くタイプ）",
         desc: "2次関数の最大値・最小値の基本（定義域の制限あり・なし）から、軸が動くタイプの場合分けまでを扱うプリントです。",
         filename: "3_2次関数_No.5.pdf",
+        videoUrl:"https://youtu.be/rL5vqd-eh1s"
       },
       {
         id: "06",
         title: "2次関数の最大値・最小値（定義域が動くタイプ）",
         desc: "定義域が変化する場合の2次関数の最大値・最小値を、場合分けで求める方法を学ぶプリントです。",
         filename: "3_2次関数_No.6.pdf",
+        videoUrl:"https://youtu.be/MHpCdbeuWFM"
       },
       {
         id: "07",
         title: "判別式と放物線の共有点",
         desc: "判別式D=b²-4acによる2次方程式の解の個数の判定と、放物線とx軸・直線の共有点の求め方を学ぶプリントです。",
         filename: "3_2次関数_No.7.pdf",
+        videoUrl:"https://youtu.be/9Ns5PbyaXYs"
       },
       {
         id: "08",
         title: "2次不等式",
         desc: "2次不等式をグラフを利用して解く方法と、2次不等式の連立についての練習プリントです。",
         filename: "3_2次関数_No.8.pdf",
+        videoUrl:"https://youtu.be/C2BeqcbKvKk"
       },
     ],
     summary: {
       filename: "3_2次関数.pdf",
+      videoUrl:"https://youtu.be/7tNc3zzeaWs"
     },
   },
   {
