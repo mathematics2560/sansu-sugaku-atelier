@@ -50,6 +50,24 @@ function NoteCard({
         {note.title}
       </h2>
       <p className="text-sm text-gray-600 leading-relaxed mb-4">{note.desc}</p>
+      {note.pdf && (
+        <a
+          href={`/notes/${note.pdf}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-bold px-4 py-2 rounded-full transition-colors mb-4"
+        >
+          <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            />
+          </svg>
+          <span>PDFを見る</span>
+        </a>
+      )}
       <div className="flex flex-wrap gap-2">
         {note.tags.map((tag) => (
           <TagChip key={tag} tag={tag} active={activeTag === tag} onClick={() => onTagClick(tag)} />

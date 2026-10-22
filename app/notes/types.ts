@@ -3,4 +3,5 @@ export type Note = {
   date: string;
   desc: string;
   tags: string[];
+  pdf?: string;
 };
