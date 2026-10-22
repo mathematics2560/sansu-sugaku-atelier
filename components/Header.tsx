@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { href: "/how-to-learn", label: "学び方" },
   { href: "/faq", label: "よくある質問" },
   { href: "/news", label: "お知らせ" },
+  { href: "/notes", label: "研究ノート" },
   { href: "/about", label: "自己紹介" },
   { href: "/contact", label: "お問い合わせ" },
 ];
