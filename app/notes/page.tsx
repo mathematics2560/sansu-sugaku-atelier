@@ -35,6 +35,15 @@ export default function NotesPage() {
           </div>
         </div>
 
+        {/* Disclaimer */}
+        <div className="max-w-screen-lg mx-auto px-4 sm:px-6 pt-8">
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4">
+            <p className="text-sm text-amber-800 leading-relaxed">
+              ここに掲載しているノートは、個人が興味の範囲で書いている未査読の文章です。学術的な査読や検証を受けたものではないため、内容の正確性は保証されません。あくまで個人の研究記録・考察としてお読みください。
+            </p>
+          </div>
+        </div>
+
         {/* Notes */}
         <div className="max-w-screen-lg mx-auto px-4 sm:px-6 py-10">
           <NotesBrowser notes={NOTES} />
