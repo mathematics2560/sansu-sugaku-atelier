@@ -2,7 +2,7 @@
   {
     "title": {
       "ja": "演奏者の重複所属と出演順序の公平性を考慮したタイムテーブル数え上げ問題",
-      "en": "Exact Enumeration of Fair Performance Timetables under Overlapping Performer Memberships"
+      "en": "Counting Timetables with Overlapping Performer Memberships and Fairness in Performance Order"
     },
     "date": "2026.10.24",
     "desc": {
@@ -20,6 +20,7 @@
       { "ja": "公平性", "en": "Fairness" },
       { "ja": "休憩配置", "en": "Break Scheduling" }
     ],
-    "pdfJa": "timetable_theory_JP_1.pdf"
+    "pdfJa": "timetable_theory_JP_1.pdf",
+    "pdfEn": "timetable_theory_EN_1.pdf"
   }
 ]
