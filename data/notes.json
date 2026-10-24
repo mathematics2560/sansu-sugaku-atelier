@@ -1,9 +1,25 @@
 [
   {
-    "title": "演奏者の重複所属と出演順序の公平性を考慮したタイムテーブル数え上げ問題",
+    "title": {
+      "ja": "演奏者の重複所属と出演順序の公平性を考慮したタイムテーブル数え上げ問題",
+      "en": "Exact Enumeration of Fair Performance Timetables under Overlapping Performer Memberships"
+    },
     "date": "2026.10.24",
-    "desc": "複数のバンド・ユニットに重複して所属する演奏者がいるイベントで、出演順序の公平性を保ちながら組めるタイムテーブルが何通りあるかを数え上げる問題について考察したノートです。",
-    "tags": ["数学", "タイムテーブル", "厳密数え上げ", "重複所属", "組合せ論", "グラフ理論", "動的計画法", "公平性", "休憩配置"],
-    "pdf": "timetable_theory_1.pdf"
+    "desc": {
+      "ja": "複数のバンド・ユニットに重複して所属する演奏者がいるイベントで、出演順序の公平性を保ちながら組めるタイムテーブルが何通りあるかを数え上げる問題について考察したノートです。",
+      "en": "A note examining how many timetables can be constructed for an event where performers belong to multiple overlapping bands or units, while preserving fairness in performance order."
+    },
+    "tags": [
+      { "ja": "数学", "en": "Mathematics" },
+      { "ja": "タイムテーブル", "en": "Timetable" },
+      { "ja": "厳密数え上げ", "en": "Exact Enumeration" },
+      { "ja": "重複所属", "en": "Overlapping Membership" },
+      { "ja": "組合せ論", "en": "Combinatorics" },
+      { "ja": "グラフ理論", "en": "Graph Theory" },
+      { "ja": "動的計画法", "en": "Dynamic Programming" },
+      { "ja": "公平性", "en": "Fairness" },
+      { "ja": "休憩配置", "en": "Break Scheduling" }
+    ],
+    "pdfJa": "timetable_theory_JP_1.pdf"
   }
 ]
