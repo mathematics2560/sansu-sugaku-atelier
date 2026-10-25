@@ -22,7 +22,7 @@ const GROUPS: Group[] = [
     badgeBg: "bg-green-100",
     badgeText: "text-green-700",
     categories: [
-      { label: "小学1年生", href: null },
+      { label: "小学1年生", href: "/prints/syo1" },
       { label: "小学2年生", href: null },
       { label: "小学3年生", href: null },
       { label: "小学4年生", href: null },
