@@ -14,7 +14,7 @@ function getTagColor(tag: string): string {
 
 const GRADES = [
   {
-    active: false,
+    active: true,
     icon: "✏️",
     label: "小学生の算数",
     sub: "1〜6年生",
