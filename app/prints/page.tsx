@@ -61,10 +61,9 @@ const GROUPS: Group[] = [
     badgeBg: "bg-purple-100",
     badgeText: "text-purple-700",
     categories: [
-      { label: "線形代数", href: null },
-      { label: "解析学", href: null },
-      { label: "集合論", href: null },
-      { label: "群論", href: null },
+      { label: "線形代数", href: "/prints/linear-algebra" },
+      { label: "微分積分", href: "/prints/calculus" },
+      { label: "集合論", href: "/prints/set-theory" },
     ],
   },
 ];

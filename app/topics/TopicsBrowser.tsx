@@ -15,7 +15,9 @@ function PrintResultCard({ entry }: { entry: PrintSearchEntry }) {
         <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${entry.badgeClass}`}>
           {entry.subjectLabel}
         </span>
-        <span className="text-xs text-gray-400">{entry.chapterNum} {entry.chapterTitle}</span>
+        <span className="text-xs text-gray-400">
+          {entry.chapterNum ? `${entry.chapterNum} ${entry.chapterTitle}` : entry.chapterTitle}
+        </span>
         <span className="text-xs font-bold text-gray-400">{entry.displayId}</span>
         {entry.supplement && (
           <span className="text-xs font-bold bg-amber-50 text-amber-600 border border-amber-200 px-2 py-0.5 rounded-full">

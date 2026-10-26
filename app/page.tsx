@@ -53,8 +53,8 @@ const GRADES = [
     active: false,
     icon: "🎓",
     label: "大学数学",
-    sub: "線形代数・解析学ほか",
-    desc: "線形代数・微分方程式・複素解析など、大学数学を基礎から丁寧に学ぶ",
+    sub: "線形代数・微分積分・集合論",
+    desc: "線形代数・微分積分・集合論など、大学数学を基礎から丁寧に学ぶ",
     bg: "bg-purple-50",
     border: "border-purple-200",
     iconBg: "bg-purple-100",
@@ -108,7 +108,7 @@ const FEATURES = [
 
 const HERO_STATS = [
   { icon: "🎥", num: "37本", label: "動画コンテンツ", solid: true },
-  { icon: "📄", num: "152枚", label: "無料プリント", solid: false },
+  { icon: "📄", num: "216枚", label: "無料プリント", solid: false },
   { icon: "📚", num: "小1・中1・高校Ⅰ・A・Ⅱ", label: "対応コンテンツ", solid: false },
   { icon: "✅", num: "完全無料", label: "登録不要", solid: true, green: true },
 ];
