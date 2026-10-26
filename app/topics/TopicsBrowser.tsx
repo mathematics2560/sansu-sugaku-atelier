@@ -3,6 +3,40 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { PopularUnit, TopicCategory } from "./types";
+import type { PrintSearchEntry } from "@/lib/printIndex";
+
+function PrintResultCard({ entry }: { entry: PrintSearchEntry }) {
+  return (
+    <Link
+      href={entry.href}
+      className="flex flex-col gap-2 bg-white border border-gray-200 rounded-xl px-4 py-3.5 hover:border-blue-300 hover:shadow-sm transition-all duration-150 group"
+    >
+      <div className="flex items-center gap-1.5 flex-wrap">
+        <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${entry.badgeClass}`}>
+          {entry.subjectLabel}
+        </span>
+        <span className="text-xs text-gray-400">{entry.chapterNum} {entry.chapterTitle}</span>
+        <span className="text-xs font-bold text-gray-400">{entry.displayId}</span>
+        {entry.supplement && (
+          <span className="text-xs font-bold bg-amber-50 text-amber-600 border border-amber-200 px-2 py-0.5 rounded-full">
+            補足
+          </span>
+        )}
+      </div>
+      <div className="flex items-center justify-between gap-2">
+        <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600">{entry.title}</span>
+        <svg
+          className="w-3.5 h-3.5 text-gray-400 group-hover:text-blue-500 group-hover:translate-x-0.5 transition-all shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </Link>
+  );
+}
 
 function CategoryCard({ cat }: { cat: TopicCategory }) {
   const hasAvailable = cat.items.some((item) => item.href !== null);
@@ -84,9 +118,11 @@ function CategoryCard({ cat }: { cat: TopicCategory }) {
 export default function TopicsBrowser({
   categories,
   popularUnits,
+  printIndex,
 }: {
   categories: TopicCategory[];
   popularUnits: PopularUnit[];
+  printIndex: PrintSearchEntry[];
 }) {
   const [query, setQuery] = useState("");
   const normalizedQuery = query.trim().toLowerCase();
@@ -114,7 +150,21 @@ export default function TopicsBrowser({
     );
   }, [popularUnits, normalizedQuery]);
 
-  const noResults = normalizedQuery !== "" && filteredCategories.length === 0 && filteredPopularUnits.length === 0;
+  const filteredPrints = useMemo(() => {
+    if (!normalizedQuery) return [];
+    return printIndex.filter(
+      (entry) =>
+        entry.title.toLowerCase().includes(normalizedQuery) ||
+        entry.desc.toLowerCase().includes(normalizedQuery) ||
+        entry.chapterTitle.toLowerCase().includes(normalizedQuery)
+    );
+  }, [printIndex, normalizedQuery]);
+
+  const noResults =
+    normalizedQuery !== "" &&
+    filteredCategories.length === 0 &&
+    filteredPopularUnits.length === 0 &&
+    filteredPrints.length === 0;
 
   return (
     <>
@@ -132,7 +182,7 @@ export default function TopicsBrowser({
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="単元を検索..."
+          placeholder="単元名やプリント名で検索..."
           className="w-full pl-11 pr-10 py-3 bg-white border border-gray-200 rounded-xl text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100"
         />
         {query && (
@@ -151,10 +201,25 @@ export default function TopicsBrowser({
 
       {noResults ? (
         <div className="text-center py-12">
-          <p className="text-gray-500 text-sm">「{query}」に一致する単元が見つかりませんでした。</p>
+          <p className="text-gray-500 text-sm">「{query}」に一致する単元・プリントが見つかりませんでした。</p>
         </div>
       ) : (
         <>
+          {/* Print results */}
+          {filteredPrints.length > 0 && (
+            <div>
+              <h2 className="text-xl font-black text-gray-900 mb-5">
+                プリントから探す
+                <span className="text-sm font-medium text-gray-400 ml-2">{filteredPrints.length}件</span>
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+                {filteredPrints.map((entry, i) => (
+                  <PrintResultCard key={`${entry.subjectSlug}-${entry.chapterNum}-${entry.displayId}-${i}`} entry={entry} />
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Category cards */}
           {filteredCategories.length > 0 && (
             <div>

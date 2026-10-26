@@ -7,11 +7,22 @@ export type Print = {
   videoUrl?: string;
 };
 
-export function PrintCard({ p, downloadBase }: { p: Print; downloadBase: string }) {
+export function PrintCard({
+  p,
+  downloadBase,
+  id,
+}: {
+  p: Print;
+  downloadBase: string;
+  id?: string;
+}) {
   const hasPrint = !!p.filename;
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col">
+    <div
+      id={id}
+      className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col scroll-mt-24"
+    >
       <div className="flex items-center gap-2 mb-4">
         <span
           className={`text-xs font-black px-3 py-1 rounded-full ${

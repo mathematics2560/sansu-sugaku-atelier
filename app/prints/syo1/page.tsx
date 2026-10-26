@@ -2,14 +2,15 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Print, PrintCard } from "@/components/PrintCard";
+import { chapterAnchorId, printAnchorId } from "@/lib/printAnchors";
 
-type Chapter = {
+export type Chapter = {
   num: string;
   title: string;
   prints: Print[];
 };
 
-const CHAPTERS: Chapter[] = [
+export const CHAPTERS: Chapter[] = [
   {
     num: "第1章",
     title: "なかまづくりとかず",
@@ -314,10 +315,6 @@ const CHAPTERS: Chapter[] = [
 
 const TOTAL_PRINTS = CHAPTERS.reduce((sum, ch) => sum + ch.prints.length, 0);
 
-function chapterAnchorId(chapter: Chapter): string {
-  return `chapter-${chapter.num.replace(/[^0-9]/g, "")}`;
-}
-
 function ChapterSection({ chapter }: { chapter: Chapter }) {
   return (
     <section id={chapterAnchorId(chapter)} className="scroll-mt-24">
@@ -333,7 +330,7 @@ function ChapterSection({ chapter }: { chapter: Chapter }) {
       {chapter.prints.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {chapter.prints.map((p, i) => (
-            <PrintCard key={i} p={p} downloadBase="/prints/syo1" />
+            <PrintCard key={i} p={p} downloadBase="/prints/syo1" id={printAnchorId(chapter, i)} />
           ))}
         </div>
       ) : (

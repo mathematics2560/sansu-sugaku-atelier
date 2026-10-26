@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TopicsBrowser from "./TopicsBrowser";
 import type { TopicCategory } from "./types";
+import { PRINT_INDEX } from "@/lib/printIndex";
 
 export const metadata = {
   title: "単元から探す | 算数・数学のアトリエ",
@@ -152,7 +153,7 @@ export default function TopicsPage() {
         </div>
 
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 py-10 space-y-12">
-          <TopicsBrowser categories={CATEGORIES} popularUnits={POPULAR_UNITS} />
+          <TopicsBrowser categories={CATEGORIES} popularUnits={POPULAR_UNITS} printIndex={PRINT_INDEX} />
         </div>
       </main>
 
