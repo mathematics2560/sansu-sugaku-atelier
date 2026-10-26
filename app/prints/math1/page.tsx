@@ -22,21 +22,18 @@ export const CHAPTERS: Chapter[] = [
         title: "単項式・多項式・降べきの順・指数法則",
         desc: "多項式の基本的な用語・表し方と、指数法則の確認問題を収録したプリントです。",
         filename: "1_数と式_No.1.pdf",
-        videoUrl:"https://youtu.be/30ZN9iy4CQg",
       },
       {
         id: "02",
         title: "展開・因数分解の公式",
         desc: "中学で習った展開・因数分解を復習し、高校で新たに学ぶ公式（3乗の展開、3変数の2乗、3乗の和・差の因数分解など）を整理したプリントです。",
         filename: "1_数と式_No.2.pdf",
-        videoUrl:"https://youtu.be/eVwyo6tWpTg",
       },
       {
         id: "03",
         title: "たすきがけ",
         desc: "たすきがけによる因数分解の手順をわかりやすく解説し、練習問題を収録しています。",
         filename: "1_数と式_No.3.pdf",
-        videoUrl:"https://youtu.be/EYMSbKi6r8E",
       },
       {
         id: "03",
@@ -44,68 +41,58 @@ export const CHAPTERS: Chapter[] = [
         title: "たすきがけのコツ",
         desc: "式の符号から括弧内の符号を判定する方法や、不要なパターンを消去するテクニックなど、たすきがけを効率よく行うコツを解説した補足プリントです。",
         filename: "1_数と式_No.3補足.pdf",
-        videoUrl:"https://youtu.be/EWaIJe4Y5F8",
       },
       {
         id: "04",
         title: "実数・循環小数",
         desc: "有理数・無理数の分類、循環小数の表し方と有理数への変換方法を学ぶプリントです。",
         filename: "1_数と式_No.4.pdf",
-        videoUrl:"https://youtu.be/oBhe-dsMCas",
       },
       {
         id: "05",
         title: "絶対値・平方根・分母の有理化",
         desc: "絶対値の定義と計算、平方根の性質（√a²=|a|）、分母の有理化をまとめた練習プリントです。",
         filename: "1_数と式_No.5.pdf",
-        videoUrl:"https://youtu.be/ZC_PA-S3ZmE",
       },
       {
         id: "06",
         title: "2重根号",
         desc: "2重根号（√の中に√がある式）の外し方と変形の問題を集めたプリントです。",
         filename: "1_数と式_No.6.pdf",
-        videoUrl:"https://youtu.be/g933DzaHTPc",
       },
       {
         id: "07",
         title: "対称式",
         desc: "対称式の性質と、基本対称式を使った計算・変形問題を収録したプリントです。",
         filename: "1_数と式_No.7.pdf",
-        videoUrl:"https://youtu.be/fh6DHp_rVvY",
       },
       {
         id: "08",
         title: "1次不等式",
         desc: "1次不等式の解き方の手順と、数直線への表し方を練習するプリントです。",
         filename: "1_数と式_No.8.pdf",
-        videoUrl:"https://youtu.be/8K_toiwOQ7Q",
       },
       {
         id: "09",
         title: "連立不等式",
         desc: "2つ以上の不等式を同時に解く「連立不等式」の解法を段階的に練習するプリントです。",
         filename: "1_数と式_No.9.pdf",
-        videoUrl:"https://youtu.be/No2v4bOobZE",
       },
       {
         id: "10",
         title: "絶対値を含む方程式",
         desc: "| |を含む方程式を場合分けで解く手順を整理した練習プリントです。",
         filename: "1_数と式_No.10.pdf",
-        videoUrl:"https://youtu.be/atgra_vxrTY",
       },
       {
         id: "11",
         title: "絶対値を含む不等式",
         desc: "| |を含む不等式の解法と、解の表し方に関する注意点をまとめたプリントです。",
         filename: "1_数と式_No.11.pdf",
-        videoUrl:"https://youtu.be/9L1dYRpFM1w",
       },
     ],
     summary: {
       filename: "1_数と式.pdf",
-      videoUrl: "https://youtu.be/hz1d502iK10",
     },
   },
   {
@@ -117,21 +104,18 @@ export const CHAPTERS: Chapter[] = [
         title: "集合の表し方・要素と集合",
         desc: "集合・要素の定義と∈・∉の記号、要素の列挙法と条件記法による集合の表し方を学ぶ基礎プリントです。",
         filename: "2_集合と命題_No.1.pdf",
-        videoUrl:"https://youtu.be/hO6qmcXjP74",
       },
       {
         id: "02",
         title: "部分集合・共通部分・和集合・補集合・ド・モルガンの法則",
         desc: "部分集合・空集合の概念から、共通部分(∩)・和集合(∪)・補集合の計算、ド・モルガンの法則までを整理したプリントです。",
         filename: "2_集合と命題_No.2.pdf",
-        videoUrl:"https://youtu.be/QQm1okSbSts",
       },
       {
         id: "03",
         title: "命題と真偽・十分条件・必要条件",
         desc: "命題の定義と真偽の判定、p⇒qの意味、十分条件・必要条件の判定方法を学ぶプリントです。",
         filename: "2_集合と命題_No.3.pdf",
-        videoUrl:"https://youtu.be/IlskVuAMGqU"
       },
       {
         id: "03",
@@ -139,26 +123,22 @@ export const CHAPTERS: Chapter[] = [
         title: "十分条件・必要条件の理解と条件の否定",
         desc: "十分条件・必要条件の意味をより深く理解し、条件の否定やド・モルガンの法則（条件版）を学ぶ補足プリントです。",
         filename: "2_集合と命題_No.3補足.pdf",
-        videoUrl:"https://youtu.be/NrDI_4tm-HM"
       },
       {
         id: "04",
         title: "命題の逆・裏・対偶",
         desc: "命題の逆・裏・対偶の定義と、真理値表を用いて命題と対偶の真偽が一致することを理解するプリントです。",
         filename: "2_集合と命題_No.4.pdf",
-        videoUrl:"https://youtu.be/hvMVA01OT34"
       },
       {
         id: "05",
         title: "背理法",
         desc: "背理法を使った証明の手順と、典型的な証明問題を収録したプリントです。",
         filename: "2_集合と命題_No.5.pdf",
-        videoUrl:"https://youtu.be/9n6zmqQeqLs"
       },
     ],
     summary: {
       filename: "2_集合と命題.pdf",
-      videoUrl:"https://youtu.be/1Jxrhb9Lt60"
     },
   },
   {
@@ -170,61 +150,52 @@ export const CHAPTERS: Chapter[] = [
         title: "関数の定義・定義域と値域・1次関数",
         desc: "関数の定義やf(x)の表し方、定義域・値域、座標平面の象限、1次関数とグラフの復習を扱う導入プリントです。",
         filename: "3_2次関数_No.1.pdf",
-        videoUrl:"https://youtu.be/cnd_4Xe96Qk"
       },
       {
         id: "02",
         title: "y=ax²のグラフと平行移動",
         desc: "y=ax²の復習から始め、グラフの平行移動の方法を学び、y=a(x-p)²+qの頂点と軸の方程式を理解するプリントです。",
         filename: "3_2次関数_No.2.pdf",
-        videoUrl:"https://youtu.be/Ixvg27gp5Kk"
       },
       {
         id: "03",
         title: "平方完成",
         desc: "y=ax²+bx+cをy=a(x-p)²+qの形に変形する平方完成の手順を学び、グラフの軸と頂点を求める練習プリントです。",
         filename: "3_2次関数_No.3.pdf",
-        videoUrl:"https://youtu.be/iBCoxDi9PVk"
       },
       {
         id: "04",
         title: "対称移動と2次関数の表し方",
         desc: "x軸・y軸・原点に関する対称移動の方法と、2次関数の3つの表し方（標準形・一般形・因数分解形）を学ぶプリントです。",
         filename: "3_2次関数_No.4.pdf",
-        videoUrl:"https://youtu.be/0xOALtorQu8"
       },
       {
         id: "05",
         title: "2次関数の最大値・最小値（軸が動くタイプ）",
         desc: "2次関数の最大値・最小値の基本（定義域の制限あり・なし）から、軸が動くタイプの場合分けまでを扱うプリントです。",
         filename: "3_2次関数_No.5.pdf",
-        videoUrl:"https://youtu.be/rL5vqd-eh1s"
       },
       {
         id: "06",
         title: "2次関数の最大値・最小値（定義域が動くタイプ）",
         desc: "定義域が変化する場合の2次関数の最大値・最小値を、場合分けで求める方法を学ぶプリントです。",
         filename: "3_2次関数_No.6.pdf",
-        videoUrl:"https://youtu.be/MHpCdbeuWFM"
       },
       {
         id: "07",
         title: "判別式と放物線の共有点",
         desc: "判別式D=b²-4acによる2次方程式の解の個数の判定と、放物線とx軸・直線の共有点の求め方を学ぶプリントです。",
         filename: "3_2次関数_No.7.pdf",
-        videoUrl:"https://youtu.be/9Ns5PbyaXYs"
       },
       {
         id: "08",
         title: "2次不等式",
         desc: "2次不等式をグラフを利用して解く方法と、2次不等式の連立についての練習プリントです。",
         filename: "3_2次関数_No.8.pdf",
-        videoUrl:"https://youtu.be/C2BeqcbKvKk"
       },
     ],
     summary: {
       filename: "3_2次関数.pdf",
-      videoUrl:"https://youtu.be/7tNc3zzeaWs"
     },
   },
   {
