@@ -4,7 +4,7 @@ import Image from "next/image";
 const FOOTER_LINKS = [
   { href: "/", label: "ホーム" },
   { href: "/grade", label: "学年から探す" },
-  { href: "/topics", label: "単元から探す" },
+  { href: "/topics", label: "単元・プリント名から探す" },
   { href: "/prints", label: "プリント一覧" },
   { href: "/how-to-learn", label: "学び方" },
   { href: "/faq", label: "よくある質問" },

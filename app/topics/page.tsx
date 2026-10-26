@@ -6,8 +6,8 @@ import type { TopicCategory } from "./types";
 import { PRINT_INDEX } from "@/lib/printIndex";
 
 export const metadata = {
-  title: "単元から探す | 算数・数学のアトリエ",
-  description: "数学の系統別に単元を探せます。",
+  title: "単元・プリント名から探す | 算数・数学のアトリエ",
+  description: "数学の系統別の単元や、プリント名から教材を探せます。",
 };
 
 const CATEGORIES: TopicCategory[] = [
@@ -143,11 +143,11 @@ export default function TopicsPage() {
               <svg className="w-3.5 h-3.5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-              <span className="text-gray-800 font-medium">単元から探す</span>
+              <span className="text-gray-800 font-medium">単元・プリント名から探す</span>
             </nav>
-            <h1 className="text-2xl sm:text-3xl font-black text-gray-900 mb-2">単元から探す</h1>
+            <h1 className="text-2xl sm:text-3xl font-black text-gray-900 mb-2">単元・プリント名から探す</h1>
             <p className="text-gray-500 text-sm sm:text-base">
-              数学の系統別に単元を探せます。気になるテーマから学習を始めよう。
+              数学の系統別の単元や、プリント名から教材を探せます。気になるテーマから学習を始めよう。
             </p>
           </div>
         </div>
