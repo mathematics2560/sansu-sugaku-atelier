@@ -50,7 +50,7 @@ const GRADES = [
     href: "/grade/high-school",
   },
   {
-    active: false,
+    active: true,
     icon: "🎓",
     label: "大学数学",
     sub: "線形代数・微分積分・集合論",
@@ -63,23 +63,8 @@ const GRADES = [
   },
 ];
 
-const POPULAR_UNITS = [
-  { label: "正の数・負の数", grade: "中1", gc: "bg-blue-100 text-blue-700", href: "/prints/chu1#chapter-1" },
-  { label: "数と式", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-1" },
-  { label: "集合と命題", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-2" },
-  { label: "2次関数", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-3" },
-  { label: "図形と計量", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-4" },
-  { label: "データの分析", grade: "数Ⅰ", gc: "bg-orange-100 text-orange-700", href: "/prints/math1#chapter-5" },
-  { label: "場合の数", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-1" },
-  { label: "確率", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-2" },
-  { label: "図形の性質", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-3" },
-  { label: "数学と人間の活動", grade: "数A", gc: "bg-teal-100 text-teal-700", href: "/prints/mathA#chapter-4" },
-  { label: "式と証明", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-1" },
-  { label: "複素数と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-2" },
-  { label: "図形と方程式", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-3" },
-  { label: "三角関数", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-4" },
-  { label: "指数関数と対数関数", grade: "数Ⅱ", gc: "bg-indigo-100 text-indigo-700", href: "/prints/math2#chapter-5" },
-];
+// 中1・数学Ⅰ・A・Ⅱのプリントをリニューアル中のため、一時的に空にしています。
+const POPULAR_UNITS: { label: string; grade: string; gc: string; href: string }[] = [];
 
 const FEATURES = [
   {
@@ -108,8 +93,8 @@ const FEATURES = [
 
 const HERO_STATS = [
   { icon: "🎥", num: "準備中", label: "動画コンテンツ", solid: true },
-  { icon: "📄", num: "216枚", label: "無料プリント", solid: false },
-  { icon: "📚", num: "小1・中1・高校Ⅰ・A・Ⅱ", label: "対応コンテンツ", solid: false },
+  { icon: "📄", num: "100枚", label: "無料プリント", solid: false },
+  { icon: "📚", num: "小1・線形代数・微分積分・集合論", label: "対応コンテンツ", solid: false },
   { icon: "✅", num: "完全無料", label: "登録不要", solid: true, green: true },
 ];
 
@@ -239,39 +224,41 @@ export default function Home() {
         </section>
 
         {/* ── 人気の単元・テーマ ── */}
-        <section className="py-16 bg-gray-50 border-y border-gray-100">
-          <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
-            <div className="flex items-start sm:items-center justify-between mb-8 gap-4">
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-1">人気の単元・テーマ</h2>
-                <p className="text-gray-500 text-sm">よく学ばれている単元をピックアップしました</p>
-              </div>
-              <Link
-                href="/topics"
-                className="shrink-0 flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
-              >
-                <span>すべて見る</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-            <div className="flex flex-wrap gap-2.5">
-              {POPULAR_UNITS.map((u) => (
+        {POPULAR_UNITS.length > 0 && (
+          <section className="py-16 bg-gray-50 border-y border-gray-100">
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
+              <div className="flex items-start sm:items-center justify-between mb-8 gap-4">
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-1">人気の単元・テーマ</h2>
+                  <p className="text-gray-500 text-sm">よく学ばれている単元をピックアップしました</p>
+                </div>
                 <Link
-                  key={u.label}
-                  href={u.href}
-                  className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-2.5 hover:border-blue-300 hover:shadow-sm transition-all duration-150 group"
+                  href="/topics"
+                  className="shrink-0 flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
                 >
-                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${u.gc}`}>{u.grade}</span>
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-blue-600">
-                    {u.label}
-                  </span>
+                  <span>すべて見る</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </Link>
-              ))}
+              </div>
+              <div className="flex flex-wrap gap-2.5">
+                {POPULAR_UNITS.map((u) => (
+                  <Link
+                    key={u.label}
+                    href={u.href}
+                    className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-2.5 hover:border-blue-300 hover:shadow-sm transition-all duration-150 group"
+                  >
+                    <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${u.gc}`}>{u.grade}</span>
+                    <span className="text-sm font-medium text-gray-700 group-hover:text-blue-600">
+                      {u.label}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* ── 3つの特徴 ── */}
         <section className="py-16 sm:py-20 bg-white">

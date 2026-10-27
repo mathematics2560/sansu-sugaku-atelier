@@ -36,7 +36,7 @@ const GROUPS: Group[] = [
     badgeBg: "bg-blue-100",
     badgeText: "text-blue-700",
     categories: [
-      { label: "中学1年生", href: "/prints/chu1" },
+      { label: "中学1年生", href: null },
       { label: "中学2年生", href: null },
       { label: "中学3年生", href: null },
     ],
@@ -47,9 +47,9 @@ const GROUPS: Group[] = [
     badgeBg: "bg-orange-100",
     badgeText: "text-orange-700",
     categories: [
-      { label: "高校数学Ⅰ", href: "/prints/math1" },
-      { label: "高校数学A", href: "/prints/mathA" },
-      { label: "高校数学Ⅱ", href: "/prints/math2" },
+      { label: "高校数学Ⅰ", href: null },
+      { label: "高校数学A", href: null },
+      { label: "高校数学Ⅱ", href: null },
       { label: "高校数学B", href: null },
       { label: "高校数学Ⅲ", href: null },
       { label: "高校数学C", href: null },

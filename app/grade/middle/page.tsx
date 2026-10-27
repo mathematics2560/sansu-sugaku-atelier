@@ -12,7 +12,7 @@ type Subject = {
 };
 
 const SUBJECTS: Subject[] = [
-  { label: "中学1年生", href: "/prints/chu1" },
+  { label: "中学1年生", href: null },
   { label: "中学2年生", href: null },
   { label: "中学3年生", href: null },
 ];
