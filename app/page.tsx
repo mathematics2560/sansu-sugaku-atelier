@@ -93,8 +93,8 @@ const FEATURES = [
 
 const HERO_STATS = [
   { icon: "🎥", num: "準備中", label: "動画コンテンツ", solid: true },
-  { icon: "📄", num: "100枚", label: "無料プリント", solid: false },
-  { icon: "📚", num: "小1・線形代数・微分積分・集合論", label: "対応コンテンツ", solid: false },
+  { icon: "📄", num: "106枚", label: "無料プリント", solid: false },
+  { icon: "📚", num: "小1・高校Ⅲ・線形代数・微分積分・集合論", label: "対応コンテンツ", solid: false },
   { icon: "✅", num: "完全無料", label: "登録不要", solid: true, green: true },
 ];
 

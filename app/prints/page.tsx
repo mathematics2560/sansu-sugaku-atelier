@@ -51,7 +51,7 @@ const GROUPS: Group[] = [
       { label: "高校数学A", href: null },
       { label: "高校数学Ⅱ", href: null },
       { label: "高校数学B", href: null },
-      { label: "高校数学Ⅲ", href: null },
+      { label: "高校数学Ⅲ", href: "/prints/math3" },
       { label: "高校数学C", href: null },
     ],
   },
