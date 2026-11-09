@@ -17,7 +17,7 @@ const SUBJECTS: Subject[] = [
   { label: "数学Ⅱ", href: null },
   { label: "数学B", href: null },
   { label: "数学Ⅲ", href: "/prints/math3" },
-  { label: "数学C", href: null },
+  { label: "数学C", href: "/prints/mathC" },
 ];
 
 export default function HighSchoolPage() {

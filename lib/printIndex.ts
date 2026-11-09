@@ -11,6 +11,7 @@ import { CHAPTERS as LINEAR_ALGEBRA_CHAPTERS } from "@/app/prints/linear-algebra
 import { CHAPTERS as CALCULUS_CHAPTERS } from "@/app/prints/calculus/page";
 import { CHAPTERS as SET_THEORY_CHAPTERS } from "@/app/prints/set-theory/page";
 import { CHAPTERS as MATH3_CHAPTERS } from "@/app/prints/math3/page";
+import { CHAPTERS as MATHC_CHAPTERS } from "@/app/prints/mathC/page";
 
 type IndexableChapter = {
   num: string;
@@ -47,6 +48,7 @@ const SUBJECTS: Subject[] = [
   { slug: "mathA", label: "数学A", badgeClass: "bg-orange-100 text-orange-700", chapters: MATHA_CHAPTERS },
   { slug: "math2", label: "数学Ⅱ", badgeClass: "bg-orange-100 text-orange-700", chapters: MATH2_CHAPTERS },
   { slug: "math3", label: "数学Ⅲ", badgeClass: "bg-orange-100 text-orange-700", chapters: MATH3_CHAPTERS },
+  { slug: "mathC", label: "数学C", badgeClass: "bg-orange-100 text-orange-700", chapters: MATHC_CHAPTERS },
   { slug: "linear-algebra", label: "線形代数", badgeClass: "bg-purple-100 text-purple-700", chapters: LINEAR_ALGEBRA_CHAPTERS },
   { slug: "calculus", label: "微分積分", badgeClass: "bg-purple-100 text-purple-700", chapters: CALCULUS_CHAPTERS },
   { slug: "set-theory", label: "集合論", badgeClass: "bg-purple-100 text-purple-700", chapters: SET_THEORY_CHAPTERS },
