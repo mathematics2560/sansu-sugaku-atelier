@@ -15,7 +15,7 @@ const SUBJECTS: Subject[] = [
   { label: "数学Ⅰ", href: null },
   { label: "数学A", href: null },
   { label: "数学Ⅱ", href: null },
-  { label: "数学B", href: null },
+  { label: "数学B", href: "/prints/mathB" },
   { label: "数学Ⅲ", href: "/prints/math3" },
   { label: "数学C", href: "/prints/mathC" },
 ];
